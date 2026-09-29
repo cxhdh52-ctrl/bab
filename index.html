@@ -376,7 +376,7 @@
       const started = Date.now();
       if (tick) clearInterval(tick);
       tick = setInterval(function () {
-        const p = Math.min(100, ((Date.now() - started) / 5000) * 100);
+        const p = Math.min(100, ((Date.now() - started) / 2000) * 100);
         barFill.style.width = p + "%";
         pct.textContent = Math.round(p) + "%";
         if (p >= 100) {
